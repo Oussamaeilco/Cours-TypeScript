@@ -14,7 +14,7 @@
     // "declarationMap": true,                /* Generates a sourcemap for each corresponding '.d.ts' file. */
     // "sourceMap": true,                     /* Generates corresponding '.map' file. */
     // "outFile": "./",                       /* Concatenate and emit output to single file. */
-    // "outDir": "./",                        /* Redirect output structure to the directory. */
+     "outDir": "./JavaScript",                        /* Redirect output structure to the directory. */
     // "rootDir": "./",                       /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
     // "composite": true,                     /* Enable project compilation */
     // "tsBuildInfoFile": "./",               /* Specify file to store incremental compilation information */
@@ -69,9 +69,9 @@
   "exclude": [
     "*.dev.ts",
     "node_modules",//by default this is excluded
-    "Scripts" //All Scripts in this folder won't be compiled
+    "TypeScript" //All Scripts in this folder won't be compiled
   ],
   "files": [
-    "Scripts/app.ts" // Compile app.ts in the Script folder the include won't work because the compiler takes the include list then it applies the exclude list
+    "TypeScript/app.ts" // Compile app.ts in the Script folder the include won't work because the compiler takes the include list then it applies the exclude list
   ]
 }

@@ -68,6 +68,10 @@
   },
   "exclude": [
     "*.dev.ts",
-    "node_modules"//by default this is excluded
+    "node_modules",//by default this is excluded
+    "Scripts" //All Scripts in this folder won't be compiled
+  ],
+  "files": [
+    "Scripts/app.ts" // Compile app.ts in the Script folder the include won't work because the compiler takes the include list then it applies the exclude list
   ]
 }

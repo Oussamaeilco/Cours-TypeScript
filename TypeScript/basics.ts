@@ -9,7 +9,6 @@
 
 //  const result2 = add(number1, number2, printResult);
 
-
 //  const person:{
 //      name : string,
 //      age: number,
@@ -22,35 +21,37 @@
 //      role: [2, 'author']
 //  };
 
- enum Role{
-     Admin,
-     Author,
-     Read_Only
- }
+enum Role {
+  Admin,
+  Author,
+  Read_Only,
+}
 
+const person = {
+  name: "Muffin_Time",
+  age: 26,
+  hobbies: ["Reading", "Music"],
+  role: Role.Author,
+};
 
- const person ={
-     name: 'Muffin_Time',
-     age: 26,
-     hobbies: ['Reading','Music'],
-     role : Role.Author
- }
+console.log(person.name);
 
- console.log(person.name);
-
- for(const hobby of person.hobbies){
-     console.log(hobby);
- }
+for (const hobby of person.hobbies) {
+  console.log(hobby);
+}
 
 //  if(person.role===Role.Admin){
 //      console.log('Is an Admin');
 //  }
 
- switch(person.role){
-     case Role.Admin: console.log('Is an Admin!');
-                      break;
-     case Role.Author: console.log('Is an Author!');
-     break;
-     case Role.Read_Only: console.log('Is an Reader!');
-     break;
- } 
+switch (person.role) {
+  case Role.Admin:
+    console.log("Is an Admin!");
+    break;
+  case Role.Author:
+    console.log("Is an Author!");
+    break;
+  case Role.Read_Only:
+    console.log("Is an Reader!");
+    break;
+}

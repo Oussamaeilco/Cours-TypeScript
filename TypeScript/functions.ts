@@ -17,14 +17,14 @@ printResult(add(3.14, 380));
 //Function type in typescript
 let combineValue: (x: number, y: number) => number;
 combineValue = add;
-console.log("CombineValue = "+combineValue(89, 5));
+console.log("CombineValue = " + combineValue(89, 5));
 
 //Callback and how it works
-function addAndHandle(x: number, y: number, cb:(res: number) => void) {
+function addAndHandle(x: number, y: number, cb: (res: number) => void) {
   const result = x + y;
   cb(result);
 }
 
-addAndHandle(10,5, (result)=>{
-    console.log("addAndHandle = " + result);
+addAndHandle(10, 5, (result) => {
+  console.log("addAndHandle = " + result);
 });
